@@ -40,11 +40,6 @@ def parseSheet(sheet):
 
     companies_map[name] = data_dict
 
-def load_data():
-    with open ('parsed_data', "rb") as f:
-        data = load(f)
-
-
 def main():
     for filename in os.listdir(directory):
         # print(directory + "/" + filename)
